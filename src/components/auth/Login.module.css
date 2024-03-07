@@ -1,0 +1,126 @@
+.container {
+    max-width: 400px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-size: 18px;
+  }
+  
+  .from {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .input__container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+  }
+  
+  .button {
+    padding: 15px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #387ADF;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #50C4ED;
+  }
+  
+  .button:active {
+    transform: scale(0.95);
+    background-color: #387ADF;
+  }
+  
+  .link {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: color 0.3s;
+    padding: 5px;
+    text-align: center;
+  }
+  
+  .span {
+    color: #387ADF;
+    cursor: pointer;
+    margin-left: 5px;
+  }
+  
+  .error {
+    color: red;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .container {
+      max-width: 500px;
+      padding: 20px;
+    }
+  
+    .title {
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+  
+    .from {
+      gap: 10px;
+    }
+  
+    .label {
+      font-size: 20px;
+      gap: 5px;
+    }
+  
+    .input {
+      padding: 10px;
+    }
+  }
+  
+  @media screen and (min-width: 992px) {
+    .container {
+      max-width: 600px;
+      margin-top: 120px;
+    }
+  
+    .label {
+      font-size: 16px;
+      gap: 5px;
+    }
+  }
+  

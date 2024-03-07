@@ -1,0 +1,174 @@
+.navbar {
+  display: flex;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.listNavbar {
+  display: flex;
+  list-style: none;
+  margin: 0;
+}
+
+.listItem {
+  display: flex;
+  padding: 0 1rem;
+  margin-left: 1rem;
+  justify-content: center;
+  align-items: center;
+  /* flex-grow: 1 0 auto; */
+}
+.listItem:last-child {
+  margin-right: 8rem;
+}
+
+.link {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: #007bff;
+}
+
+.toggleButton {
+  display: none;
+}
+
+.userMenu {
+    position: relative;
+  }
+  
+  .dropdownButton {
+    color: #000;
+    cursor: pointer;
+    margin-right: 1rem;
+    transition: color 0.3s ease;
+    background-color: #fff;
+    border: none;
+    margin-right: 4rem;
+  }
+  
+  .dropdownButton:hover {
+    color: #007bff;
+  }
+  
+  .subMenu {
+    position: absolute;
+    top: calc(50% + 1px);
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+    padding: 0.5rem 1rem;
+    list-style: none;
+    display: none;
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .subMenuItem {
+    margin: 0.5rem 0;
+    cursor: pointer;
+  }
+
+  .subMenuItem a{
+    text-decoration: none;
+    color: #333;
+  }
+
+  .subMenuItem a:hover {
+    color: #007bff;
+  }
+  
+  .userMenu:hover .subMenu {
+    display: block;
+  }
+  
+  .subMenuItem:hover {
+    background-color: #f5f5f5;
+    color: #007bff; 
+  }
+
+.loginLink {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  margin-right: 0;
+}
+
+@media (max-width: 768px) {
+  .toggleButton {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 2rem;
+  }
+
+  .listNavbar {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 250px;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #fff;
+    transition: left 0.3s ease;
+  }
+
+  .listItem {
+    margin-left: 0;
+    flex-grow: 0;
+  }
+
+  .listItem:last-child {
+    margin-right: 0;
+  }
+
+  .showSidebar {
+    left: 0;
+  }
+
+  .dropdownButton {
+      margin-right: 0;
+  }
+  .userIcon {
+    margin-left: 11rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .toggleButton {
+    display: none;
+  }
+
+  .listNavbar {
+    display: flex;
+  }
+
+  .subMenu {
+      right: 4rem;
+  }
+
+  .loginLink {
+   margin-right: 2rem;
+   
+  }
+
+}

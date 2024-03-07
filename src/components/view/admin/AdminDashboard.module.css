@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+}
+
+.btn__sidebar__container {
+    display: block;
+}
+
+.btn__sidebar {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    background-color: #fff;
+    border: none;
+    margin-top: 1rem;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .btn__sidebar__container {
+        display: none;
+    }
+}
