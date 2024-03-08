@@ -3,6 +3,7 @@ import { uploadProduct } from "../../../../utils/api";
 import useAuthStore from "../../../../store/authStore";
 import useProductStore from "../../../../store/productStore";
 import InputField from "../../../ui/InputField";
+import InputFile from "../../../ui/InputFile";
 import styles from './UploadProduct.module.css'
 
 const UploadProduct: React.FC = () => {
@@ -79,7 +80,7 @@ const UploadProduct: React.FC = () => {
             />
           </div>
           <div className={styles.formColumn}>
-            <InputField
+            <InputFile
               label="Image"
               name="image"
               type="file"

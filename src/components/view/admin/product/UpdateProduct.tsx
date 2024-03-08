@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { updateProduct } from "../../../../utils/api";
 import InputField from "../../../ui/InputField";
+import InputFile from "../../../ui/InputFile";
 import styles from  './UpdateProduct.module.css';
 const UpdateProduct: React.FC<{ productId: string }> = ({ productId }) => {
   const [formData, setFormData] = useState({
@@ -90,7 +91,7 @@ const UpdateProduct: React.FC<{ productId: string }> = ({ productId }) => {
             />
           </div>
           <div className={styles.formColumn}>
-            <InputField
+            <InputFile
               label="Image"
               name="image"
               type="file"
