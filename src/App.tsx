@@ -6,6 +6,8 @@ import LoginPage from "./pages/auth/login";
 import AdminPage from "./pages/admin";
 import ProductAdminPage from "./pages/admin/products";
 import UserAdminPage from "./pages/admin/users";
+import UserPage from "./pages/user";
+import CartPage from "./pages/cart";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +18,15 @@ const router = createBrowserRouter([
         path: "/",
         element: <HomePage />,
       },
+      {
+        path: "/user/*",
+        element: <UserPage />
+      },
+      {
+        path: '/cart',
+        element: <CartPage />
+      },
+
     ],
   },
   {

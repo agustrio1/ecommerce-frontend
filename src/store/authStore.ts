@@ -2,9 +2,12 @@ import { create } from "zustand";
 import Cookies from "js-cookie";
 
 interface User {
+  id?: string;
   name: string;
   email: string;
   phone: string;
+  address: string;
+  password: string;
   role?: string;
 }
 
@@ -21,8 +24,8 @@ const useAuthStore = create<AuthState>((set) => {
   const token = Cookies.get("token",);
   const user = Cookies.get("user");
 
-  console.log(token);
-  console.log(user);
+  // console.log(token);
+  // console.log(user);
 
   return {
     user: user ? JSON.parse(user) : null,
@@ -55,7 +58,7 @@ const useAuthStore = create<AuthState>((set) => {
         }
 
       } catch (error) {
-        console.error("Error registering user:", error);
+        // console.error("Error registering user:", error);
         throw new Error("Failed to register user");
       }
     },
@@ -71,7 +74,6 @@ const useAuthStore = create<AuthState>((set) => {
         });
 
         const data = await response.json();
-        console.log(data)
 
         if (response.ok) {
             Cookies.set('user', JSON.stringify(data.data.user), {
@@ -86,7 +88,7 @@ const useAuthStore = create<AuthState>((set) => {
           throw new Error(data.message);
         }
       } catch (error) {
-        console.error("Error logging in:", error);
+        // console.error("Error logging in:", error);
         throw new Error("Failed to login");
       }
     },
