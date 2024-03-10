@@ -1,0 +1,117 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+  border: 1px solid #e0e0e0;
+}
+
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  top: 0;
+  color: #333;
+  text-align: center;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.thead {
+  background-color: #333;
+  color: #fff;
+  text-align: left;
+}
+
+.th {
+  padding: 10px;
+  text-align: left;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+.tbody {
+  background-color: #fff;
+  color: #333;
+  font-size: 0.8rem;
+  width: 100%;
+}
+
+.td {
+  padding: 6px 2px;
+  padding-left: 5px;
+  border-bottom: 1px solid #ddd;
+  margin-left: 0.5rem;
+  max-width: 100px;
+  font-size: 0.9rem;
+}
+
+.email {
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modalContent {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+  max-height: 80vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.closeButton {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 30px;
+    margin-left: 19rem;
+    width: calc(100% - 60px);
+    overflow-x: auto;
+  }
+
+  .th {
+    font-size: 1rem;
+  }
+  .td {
+    max-width: 200px;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .productTable {
+    margin-left: 30rem;
+    width: calc(100% - 60px);
+    overflow-x: auto;
+  }
+}

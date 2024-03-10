@@ -111,11 +111,11 @@ const UpdateProduct: React.FC<{ productId: string }> = ({ productId }) => {
               value={formData.stock}
               onChange={handleChange}
             />
+          </div>
+        </div>
             <button type="submit" className={styles.button}>
               Update Product
             </button>
-          </div>
-        </div>
       </form>
     </div>
   );
